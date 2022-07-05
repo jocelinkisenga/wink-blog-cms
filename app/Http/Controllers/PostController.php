@@ -20,6 +20,6 @@ class PostController extends Controller
     public function show(string $slug){
         $post = WinkPost::where('slug',$slug)->first();
 
-        return view('pages.show');
+        return view('pages.show',['post'=>$post]);
     }
 }

@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 });*/
 
 Route::get('/',[App\Http\Controllers\PostController::class,'index']);
-Route::get('article',[App\Http\Controllers\PostController::class,'show']);
+Route::get('article/{slug}',[App\Http\Controllers\PostController::class,'show']);
