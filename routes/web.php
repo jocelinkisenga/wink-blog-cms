@@ -13,8 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
-Route::get('articles'[App\Http\Controllers\PostController::class,'index']);
+Route::get('/',[App\Http\Controllers\PostController::class,'index']);
+Route::get('article',[App\Http\Controllers\PostController::class,'index']);
