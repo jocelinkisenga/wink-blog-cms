@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevBlog - Julia Walker's Personal Blog</title>
+  <title>{{$user->name}} Personal Blog</title>
 
   <!--
     - favicon
@@ -152,7 +152,7 @@
         <div class="left">
 
           <h1 class="h1">
-            Hi, I'm <b>Julia&nbsp;Walker</b>.
+            Hi, I'm <b>{{$user->name}}</b>.
             <br>Web Developer
           </h1>
 
@@ -172,7 +172,7 @@
 
           <div class="pattern-bg"></div>
           <div class="img-box">
-            <img src="./assets/images/hero.png" alt="Julia Walker" class="hero-img">
+            <img src="{{$user->avatar}}" alt="Julia Walker" class="hero-img">
             <div class="shape shape-1"></div>
             <div class="shape shape-2"></div>
           </div>
@@ -226,11 +226,11 @@
                   <div class="wrapper-flex">
 
                         <div class="profile-wrapper">
-                            <img src="{{wink}}" alt="Julia walker" width="50">
+                            <img src="{{$post->author->avatar}}" alt="Julia walker" width="50">
                         </div>
 
                         <div class="wrapper">
-                          <a href="#" class="h4">Julia Walker</a>
+                          <a href="#" class="h4">{{$post->author->name}}</a>
 
                            <p class="text-sm">
                             <time datetime="2021-09-21">Sep 21, 2021</time>
@@ -424,27 +424,7 @@
 
       </div>
 
-      <div class="wrapper">
-
-        <p class="footer-title">Legal Stuff</p>
-
-        <ul>
-
-          <li>
-            <a href="#" class="footer-link">Privacy Notice</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Cookie Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms Of Use</a>
-          </li>
-
-        </ul>
-
-      </div>
+     
 
     </div>
 
