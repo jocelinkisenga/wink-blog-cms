@@ -13,7 +13,7 @@ class PostController extends Controller
                             ->orderBy('publish_date','DESC')
                             ->simplePaginate(5);
 
-        return view('welcome',['posts'=>$posts]);
+        return view('index',['posts'=>$posts]);
 
     }
 
